@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>multi-step-form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="bg-img">
+        <div class="number">
+          <div class="step-container">
+            <div class="box">1</div>
+            <div class="step-details">
+              <p>STEP 1</p>
+              <strong>YOUR INFO</strong>
+            </div>
+          </div>
+          <div class="step-container">
+            <div class="box">2</div>
+            <div class="step-details">
+              <p>STEP 2</p>
+              <strong>SELECT PLAN</strong>
+            </div>
+          </div>
+
+          <div class="step-container">
+            <div class="box">3</div>
+            <div class="step-details">
+              <p>STEP 3</p>
+              <strong>ADD-ONS</strong>
+            </div>
+          </div>
+
+          <div class="step-container">
+            <div class="box">4</div>
+            <div class="step-details">
+              <p>STEp 4</p>
+              <strong>SUMMARY</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form action="">
+        <div class="bg-form">
+          <div class="form-container">
+            <div class="header">
+              <h1>Personal info</h1>
+              <p>Please provide your name, email, address, and phone number</p>
+            </div>
+            <div class="input-container">
+              <div class="form-input">
+                <label for="name"
+                  ><span>Name</span>
+                  <span class="error">This field is required</span></label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="e.g. Kingsuk"
+                />
+              </div>
+              <div class="form-input">
+                <label for="email"
+                  ><span>Email Address </span
+                  ><span class="error">This field is required</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="e.g. kingsuk@lorem.com"
+                />
+              </div>
+              <div class="form-input">
+                <label for="phon"
+                  ><span>Phone Number</span
+                  ><span class="error">This field is required</span></label
+                >
+                <input
+                  type="tel"
+                  name="phon"
+                  id="phon"
+                  placeholder="e.g. +91 234 567 890"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-container">
+            <div class="header">
+              <h1>Select your plan</h1>
+              <p>You have the option of monthly or yearly billing</p>
+            </div>
+            <div class="input-container">
+              <div class="plan-card">
+                <img
+                  src="assets/images/icon-arcade.svg"
+                  alt="arcade"
+                  class="icon"
+                />
+                <div class="details">
+                  <h1>Arcade</h1>
+                  <p>$9/mo</p>
+                </div>
+              </div>
+              <div class="plan-card">
+                <img
+                  src="assets/images/icon-advanced.svg"
+                  alt="advanced"
+                  class="icon"
+                />
+                <div class="details">
+                  <h1>Advanced</h1>
+                  <p>$12/mo</p>
+                </div>
+              </div>
+              <div class="plan-card">
+                <img src="assets/images/icon-pro.svg" alt="pro" class="icon" />
+                <div class="details">
+                  <h1>Pro</h1>
+                  <p>$15/mo</p>
+                </div>
+              </div>
+            </div>
+            <div class="toggle">
+              <p>Monthly</p>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+              <p>Yearly</p>
+            </div>
+          </div>
+          <div class="form-container">
+            <div class="header">
+              <h1>Pick add-ons</h1>
+              <p>Add-ons help enhance your gaming experience</p>
+            </div>
+            <div class="input-container">
+              <div class="checkbox-card">
+                <div class="checkbox-details">
+                  <input type="checkbox" name="check" id="check" />
+                  <div class="details">
+                    <h1>Online service</h1>
+                    <p>Access to multiplayer games</p>
+                  </div>
+                </div>
+
+                <p>+$1/mo</p>
+              </div>
+              <div class="checkbox-card">
+                <div class="checkbox-details">
+                  <input type="checkbox" name="check" id="check" />
+                  <div class="details">
+                    <h1>Large storage</h1>
+                    <p>Extra 1TB of cloud save</p>
+                  </div>
+                </div>
+
+                <p>+$2/mo</p>
+              </div>
+              <div class="checkbox-card">
+                <div class="checkbox-details">
+                  <input type="checkbox" name="check" id="check" />
+                  <div class="details">
+                    <h1>Customizable profile</h1>
+                    <p>Custom theme on your profile</p>
+                  </div>
+                </div>
+
+                <p>+$2/mo</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-container">
+            <div class="header">
+              <h1>Finishing up</h1>
+              <p>Double-check everything looks ok before confirming.</p>
+            </div>
+            <div class="input-container">
+              <div class="total-box">
+                <div class="charge main">
+                  <div class="con">
+                    <h5>Arcade (Monthly)</h5>
+                    <p>Change</p>
+                  </div>
+                  <p class="price">$90/yr</p>
+                </div>
+                <hr />
+                <div class="charge sub">
+                  <p>Online service</p>
+                  <p class="addon">$10/yr</p>
+                </div>
+                <div class="charge sub">
+                  <p>Larger service</p>
+                  <p class="addon">$20/yr</p>
+                </div>
+              </div>
+
+              <div class="tota">
+                <p>Total (per year)</p>
+                <strong>$120/yr</strong>
+              </div>
+            </div>
+          </div>
+          <div class="form-container formfive">
+            <img src="assets/images/icon-thank-you.svg" alt="thank" />
+            <h1>Thank you</h1>
+            <p>
+              Thank for confirming your subscription! We hope you have fun using
+              our platform. If you ever need support, please feel free to email
+              us at support@loremgaming.com
+            </p>
+          </div>
+        </div>
+        <div class="button">
+          <button type="button" id="back" onclick="nexPrev(-1)">Go Back</button
+          ><button type="button" id="next" onclick="nexPrev(1)">
+            Next Step
+          </button>
+          <button type="button" id="confirm">Confirm</button>
+        </div>
+      </form>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
